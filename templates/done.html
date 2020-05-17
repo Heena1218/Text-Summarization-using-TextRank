@@ -1,0 +1,29 @@
+<html>
+   <head><style>
+      #content{
+         background-color: grey;
+         color:white
+      }
+      a:link{
+         background-color: black;
+         color: white;
+         padding: 14px 25px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+      }
+   </style></head>
+   <body>
+      <div id = "content">
+    <h2>-----   Summary :  ----  </h2>
+    <ol>
+      {%for i in range(0,number)%}
+      <li>{{result[i][1]}}</li>
+      {%endfor%}
+   </ol>
+   </br>
+   <a href="{{ url_for('student') }}">Home Page</a>
+   </a>
+</div>
+   </body>
+</html>
